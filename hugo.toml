@@ -1,0 +1,46 @@
+baseURL = 'https://germtb.github.io/'
+languageCode = 'en-us'
+title = "Gerard's Blog"
+theme = 'hugo-blog-awesome'
+
+[params]
+  sitename = "Gerard's Blog"
+  defaultColor = "auto"
+  description = "Technical blog about algorithms, systems, and honest engineering."
+  mainSections = ['posts']
+  toc = true
+  goToTop = true
+
+  [params.author]
+    name = 'Gerard Moreno-Torres Bertran'
+    intro = "Gerard Moreno-Torres"
+    description = "Software engineer. I write about algorithms, systems programming, and things I got wrong along the way."
+
+[params.math]
+  enable = true
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/germtb"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:germtf@gmail.com"
+
+[[menu.main]]
+  pageRef = "/"
+  name = 'Home'
+  url = '/'
+  weight = 10
+
+[[menu.main]]
+  pageRef = "posts"
+  name = 'Posts'
+  url = '/posts/'
+  weight = 20
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false

@@ -1,0 +1,13 @@
+<article class="post-item">
+    <h4 class="post-item-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h4>
+    {{ with .Description }}
+    <p class="post-item-description">{{ . }}</p>
+    {{ end }}
+    {{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
+    {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+    <time class="post-item-meta" datetime="{{ dateFormat $ISO_date .Date }}">
+        {{ time.Format $configDateFormat .Date }}
+    </time>
+</article>
