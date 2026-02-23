@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gerard&#39;s Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Technical blog about algorithms, systems, and honest engineering.</description>
-    <language>en-us</language>
-    <managingEditor>Gerard Moreno-Torres Bertran</managingEditor>
-    <lastBuildDate>Sat, 21 Feb 2026 12:15:04 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>FourierLSH: When Better Asymptotics Lose to BLAS</title>
-      <link>http://localhost:1313/posts/fourierlsh/</link>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/fourierlsh/</guid>
-      <description>&lt;p&gt;I recently explored whether FFT-based structured hashing could replace random projections in Locality-Sensitive Hashing. The complexity looked promising — $O(L \log d)$ instead of $O(dL)$ — but the experiments told a different story. Here&amp;rsquo;s what I tried, what I found, and why it didn&amp;rsquo;t work.&lt;/p&gt;
-&lt;h2 id=&#34;the-idea&#34;&gt;The idea&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gerard's Blog</title><link>https://germtb.github.io/posts/</link><description>Technical blog about algorithms, systems, and honest engineering.</description><language>en-us</language><managingEditor>Gerard Moreno-Torres Bertran</managingEditor><lastBuildDate>Sat, 21 Feb 2026 12:21:09 +0900</lastBuildDate><atom:link href="https://germtb.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>FourierLSH: When Better Asymptotics Lose to BLAS</title><link>https://germtb.github.io/posts/fourierlsh/</link><pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate><guid>https://germtb.github.io/posts/fourierlsh/</guid><description>&lt;p&gt;I recently explored whether FFT-based structured hashing could replace random projections in Locality-Sensitive Hashing. The complexity looked promising — $O(L \log d)$ instead of $O(dL)$ — but the experiments told a different story. Here&amp;rsquo;s what I tried, what I found, and why it didn&amp;rsquo;t work.&lt;/p&gt;
+&lt;h2 id="the-idea"&gt;The idea&lt;/h2&gt;
 &lt;p&gt;Random hyperplane LSH computes hash bits by projecting a vector $x \in \mathbb{R}^d$ onto random Gaussian vectors:&lt;/p&gt;
-&lt;p&gt;$$h_i(x) = \text{sgn}(\langle g_i, x \rangle)$$&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;$$h_i(x) = \text{sgn}(\langle g_i, x \rangle)$$&lt;/p&gt;</description></item></channel></rss>

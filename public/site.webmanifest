@@ -1,7 +1,7 @@
 {
     "name": "Gerard's Blog",
     "short_name": "Gerard's Blog",
-    "start_url": "http://localhost:1313/",
+    "start_url": "https://germtb.github.io/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",
